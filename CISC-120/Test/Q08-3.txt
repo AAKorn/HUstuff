@@ -1,0 +1,4 @@
+S = raw_input("What is your word?: ")
+def length(S):
+	print "The length of your word is %d" % len(S) + " letters long."
+length(S)

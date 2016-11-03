@@ -1,0 +1,7 @@
+Student_id = raw_input("What is your Student id number?: " ) 
+Student_name=  raw_input("What is your name?: " ) 
+Student_major= raw_input("What is your major?: " )
+
+def student_info(Student_id, Student_name, Student_major):
+	print "Your student id number is " + Student_id + ", your name is " + Student_name + " and your major is " + Student_major
+student_info(Student_id, Student_name, Student_major)

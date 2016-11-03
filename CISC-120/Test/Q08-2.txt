@@ -1,0 +1,7 @@
+K = int(input("What is your number that you would like to check?: "))
+def is_even(K):
+	if K % 2 == 0:
+		print "This number is even"
+	else:
+		print "This number is odd"
+is_even(K)

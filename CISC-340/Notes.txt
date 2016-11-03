@@ -1,0 +1,75 @@
+Every english sentence is built around the verb, which has a property of tense. What comes with the verb is the subject, a recipient, (represent the connections as ovals) and then there is an agent.
+
+Place all the ingredients in a bowl and mix thoroughly Jane gave Tome an ice cream cone.
+
+
+
+[Person: Tom]   <---  (Subject) <--- [Verb/Event: give] ---> (Agent) ---> [Person: Jane]
+				     |
+				     |
+				     |
+				     V
+				  (Object) 
+				     |
+				     |
+				     |
+				     V
+Ice cream ---> (	) --->	  [Cone]
+
+For all(x) player(x) player(Austin) Implies every player is Austin
+
+Transitive:
+Prove the following axiom:
+
+a=b & b=c then a=c
+
+Attempts are below.
+
+Given that:
+
+if(a=b ^ b=c) -> (a=c)
+
+What if not?
+Equivalency Rules on Predicate Calculus, they are not the same thing.
+
+!((a=b ^ b=c) -> (a=c)) because Resolution refutation 
+
+(!(a=b ^ b=c) ^ !(a=c)) because !(p -> q) == p ^ !q
+
+(a!=b v b!=c) ^ (a!=c) because !(A ^ B) == !A v !B
+
+Falls apart here.
+
+if(a=b ^ b=c) -> (a=c)
+
+Assume True
+
+a=b == True
+b=c == True 
+
+a=c == ? 
+
+if(True ^ True) -> (a=c)
+
+a=c == True becuase of the AND Truth Table. 
+
+Assume False
+
+a=b == False
+b=c == False
+
+a=c == ?
+
+if(False ^ False) -> (False) becase of the AND Truth Table.
+
+Since there were no contradictions by Resolution Refutation, this means that a=b ^ b=c -> a=c is True.
+
+if(a=b ^ b=c) -> (a=c)
+
+Let a = 1; b = 1; c = 1
+
+1 = 1 = 1 == True
+
+Final conclusion: a=b ^ b=c -> a=c is an axiom, meaning that it is something humans consider to be true and is the beginning of reasoning. 
+Axioms cannot be proven because they are accepted to be true.
+

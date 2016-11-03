@@ -1,0 +1,39 @@
+pwd = "Print Working Directory". Shows the current location in the directory tree. 
+
+cd = "Change Directory". When typed all by itself, it returns you to your home directory.
+
+cd + directory = Change into the specified directory name. Example: cd /Documents
+
+cd ~ = "~" is an alias for your home directory. It can be used as a shortcut to your "home", or other directories relative to your
+home.
+
+cd .. = Move up one directory. For example, if you are in /home/Desktop and you type "cd ..", you will end up in /home.
+
+ls = List all files in the current directory, in column format. 
+
+ls -la = Listall files, including "hidden" files. Hidden files are those files that begin with a ".", e.g The .bash_history file in
+your home directory, and directory detailed information.
+
+clear = clear the screen
+
+mkdir = Make Directory. Example: mkdir /tmp/myfiles/ 
+
+rmdir = Remove Directory. Example: rmdir /tmp/myfiles
+
+rm = Delete a file. Example: rm /tmp/mp3files.txt
+
+rm -r = remove a non-empty directory
+
+cp = Copies a file from one directory to another. Example: cp mp3files.txt /tmp (copies the mp3files.txt file to the /tmp directory)
+
+nano + file = open a terminal text editor for the specified file.
+
+mv = moves a file to a new location, or renames it. For example: mv mp3files.txt /tmp
+(copy the file to /tmp, and delete it from the original location)
+
+touch + file name = create new file. 
+
+man + command = online manuals: Man Pages, best source of information for most commands. example: man ls, man nano 
+To quit from a man page, just type the "q" key.
+
+whatis + command = display one-line manual page descriptions. 

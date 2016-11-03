@@ -1,0 +1,10 @@
+a = "CISC 120"
+print a[2:5]
+b = " Hello World "
+print len(b)
+c = len("Python")
+print c 
+d = "Apple"
+print d.upper()
+e = "Quize 8"
+print "I" in e

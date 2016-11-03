@@ -1,0 +1,78 @@
+n = 6
+attempt = 0
+string = "Your Mom"
+lisT = []
+obscuredString = []
+
+for x in string:
+    lisT.append(x.lower())
+
+for x in lisT:
+    if x == " ":
+        obscuredString.append(x)    
+    else:
+        obscuredString.append(x.replace(x,"_"))
+
+def hangMan(lisT, attempt, n):
+    if attempt == 0:
+        print"-------"
+        print"|   |"
+        print"|"
+        print"|"
+        print"|"
+    if attempt == 1:
+        print "------"
+        print "|  |"
+        print "|  O"
+        print "|   "
+        print "|   "
+    if attempt == 2:
+        print"-------"
+        print"|   |"
+        print"|   O"
+        print"|   |"
+        print"|"
+    if attempt == 3:
+        print"------"
+        print"|   |"
+        print"|   O"
+        print"|  /|"
+        print"|"
+    if attempt == 4:
+        print"------"
+        print"|   |"
+        print"|   O"
+        print"|  /|\ "
+        print"|"
+    if attempt == 5:
+        print"------"
+        print"|   |"
+        print"|   O"
+        print"|  /|\ "
+        print"|  /"
+    if attempt == n:
+        print"------"
+        print"|   |"
+        print"|   O"
+        print"|  /|\ "
+        print"|  / \ "
+        print"\n"
+        print "GAME OVER"
+        return
+    print obscuredString
+    guess = raw_input("What letter will you guess?: ")
+    for x in xrange(0,len(lisT)):
+        if lisT[x] == guess:
+            obscuredString[x] = guess
+            print obscuredString
+
+    if guess not in lisT:
+        attempt+=1
+        print "You have:",n - attempt,"attempts left"
+
+    if "_" in obscuredString:
+        hangMan(lisT, attempt, n)
+    else:
+        print"Congrats you win!"
+
+hangMan(lisT, attempt, n)

@@ -1,0 +1,7 @@
+i = 1
+S = "Everyone should know how to program a computer, because it teaches you how to think! -Steve Jobs"
+while i < 2:
+	for word in S.split():
+		print word
+		i += 1
+	

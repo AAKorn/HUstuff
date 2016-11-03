@@ -1,0 +1,23 @@
+The computer fetches instructions from the main memory, the hard drive, and 
+the L1 cache.
+1             2              5
+0001 = Load, 0010 = Store, 0101 = Add
+
+V = Voltage
+I = Current
+R = Resistance
+
+V = I*R
+I = V/R
+R = V/I
+
+X2 = 2*pi*f*c
+
+ROM = Read only memory, non-volatile. There for keeps, storage
+RAM = Random Access Memory, volatile. There to cycle data. 
+
+Sequential Access = in order. Hard Disk Drive.
+Direct Access = go directly to the address in the main memory. Solid State Drive.
+Random Access = go directly to any location in the main memory randomly. 
+Associative Access = relies on bits and pieces of the data to get to the whole
+

@@ -1,0 +1,150 @@
+###################################################################Question 1
+from pyStack import Stack
+
+s = Stack()
+
+s.push(5) #5 is added to the last spot in the stack
+print s
+s.push(3)#3 is added to the last spot in the stack
+print s
+s.pop()#3 is removed since pop removes the last item in a stack
+print s
+s.push(2)#2 add back
+print s
+s.push(8)#8 add back
+print s
+s.pop()#8 removed
+print s
+s.pop()#2removed
+print s
+s.push(9)#9 add back
+print s
+s.push(1)#1 add back
+print s
+s.pop()#1 removed
+print s
+s.push(7)#7 add back
+print s
+s.push(6)#6 add back
+print s
+s.pop()#6 removed
+print s
+s.pop()#7 removed
+print s
+s.push(4)#4 add back
+print s
+s.pop()#4 removed
+print s
+s.pop()#9 removed
+print s
+#Code output below
+'''
+[5]
+[5, 3]
+[5]
+[5, 2]
+[5, 2, 8]
+[5, 2]
+[5]
+[5, 9]
+[5, 9, 1]
+[5, 9]
+[5, 9, 7]
+[5, 9, 7, 6]
+[5, 9, 7]
+[5, 9]
+[5, 9, 4]
+[5, 9]
+[5]
+'''
+####################################################Question 2
+from pyStack import Stack
+import random 
+
+s = Stack()
+
+def pushAndReverse(s):
+	
+	for i in xrange(0,10):
+		x = random.randrange(0,10)
+		s.push(x)
+		if i == 9:
+			print s	
+	s.reverse()
+	print s
+
+pushAndReverse(s)
+#Code output below
+'''
+[4, 6, 9, 5, 2, 4, 1, 6, 4, 0]
+[0, 4, 6, 1, 4, 2, 5, 9, 6, 4]
+'''
+##################################################Question 3
+from pyQueue import ArrayQueue
+
+queue = ArrayQueue()
+
+queue.enqueue(5)
+print queue
+queue.enqueue(3)
+print queue
+queue.dequeue()
+print queue
+queue.enqueue(2)
+print queue
+queue.enqueue(8)
+print queue
+queue.dequeue()
+print queue
+queue.dequeue()
+print queue
+queue.enqueue(9)
+print queue
+queue.enqueue(1)
+print queue
+queue.dequeue()
+print queue
+queue.enqueue(7)
+print queue
+queue.enqueue(6)
+print queue
+queue.dequeue()
+print queue
+queue.dequeue()
+print queue
+queue.enqueue(4)
+print queue
+queue.dequeue()
+print queue
+queue.dequeue()
+print queue
+#Code output below
+'''
+[5, None, None, None, None, None, None, None, None, None]
+[5, 3, None, None, None, None, None, None, None, None]
+[None, 3, None, None, None, None, None, None, None, None]
+[None, 3, 2, None, None, None, None, None, None, None]
+[None, 3, 2, 8, None, None, None, None, None, None]
+[None, None, 2, 8, None, None, None, None, None, None]
+[None, None, None, 8, None, None, None, None, None, None]
+[None, None, None, 8, 9, None, None, None, None, None]
+[None, None, None, 8, 9, 1, None, None, None, None]
+[None, None, None, None, 9, 1, None, None, None, None]
+[None, None, None, None, 9, 1, 7, None, None, None]
+[None, None, None, None, 9, 1, 7, 6, None, None]
+[None, None, None, None, None, 1, 7, 6, None, None]
+[None, None, None, None, None, None, 7, 6, None, None]
+[None, None, None, None, None, None, 7, 6, 4, None]
+[None, None, None, None, None, None, None, 6, 4, None]
+[None, None, None, None, None, None, None, None, 4, None]
+'''
+##################################################################Question 4
+
+A stack data structure is FILO, first in last out. An example would be a stack of chairs, if you want to get to the first chair that was placed down, the first element entered into the stack, your must first take off all of the other chairs, the lasts, to achieve this goal.
+
+
+A queue data structure is FIFO, first in first out. An example of a queue would be when you are awaiting your burger in the drive-thru at McDonald's, each car ahead of you must first receive there own orders before you will ever receiver yours. 
+
+
+
+
