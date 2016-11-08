@@ -13,13 +13,11 @@ class nestedHashTable:
         return self.elements
 
     def findElement(self, element):
-        find = self.hashIndex(element)
-        slot = find % self.length
+        slot = self.hashIndex(element) % self.length
 
         for x in self.elements[slot]:
-            if x == find:
+            if x == element:
                 return True 
-
 
     def hashIndex(self, element):
         return ord(element)
@@ -36,4 +34,4 @@ for x in xrange(1000):
     hash1.insertElements(chr(random.randrange(65,91)))
 print hash1.getElements()
 
-
+print hash1.findElement('A')
